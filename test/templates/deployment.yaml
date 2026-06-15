@@ -20,5 +20,5 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
-          command: ['sh', '-c', 'echo "Hello from Nihar\'s Helm Chart" > /usr/share/nginx/html/index.html && nginx -g \'daemon off;\'']
+          command: ["sh", "-c", "echo 'Hello from Nihars Helm Chart' > /usr/share/nginx/html/index.html && nginx -g 'daemon off;'"]
           imagePullPolicy: {{ .Values.image.pullPolicy }}
